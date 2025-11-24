@@ -3,26 +3,27 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
     <title>Косметологічна клініка Beaty Zone</title>
   </head>
   <body>
     <header>
       <nav>
         <a href="index.html">
-          <img src="/images/svg/logo.svg" alt="Головна сторінка" />
+          <img src="/images/svg/logo.svg" alt="Головна сторінка Beaty Zone" />
         </a>
         <ul>
           <li>
-            <a href="#about-us-section">Про нас</a>
+            <a class="link" href="#about-us-section">Про нас</a>
           </li>
           <li>
-            <a href="#why-us-section">Чому ми</a>
+            <a class="link" href="#why-us-section">Чому ми</a>
           </li>
           <li>
-            <a href="#our-procedures-section">Наші процедури</a>
+            <a class="link" href="#our-procedures-section">Наші процедури</a>
           </li>
           <li>
-            <a href="#contacts-section">Контакти</a>
+            <a class="link" href="#contacts-section">Контакти</a>
           </li>
         </ul>
         <ul>
@@ -51,23 +52,31 @@
       </nav>
     </header>
     <main>
-      <section>
-        Косметологічна клініка
-        <h1>Beaty Zone</h1>
-        <button type="button">Замовити дзвінок</button>
-        <p>Запишись та отримай безкоштовну консультацію нашого косметолога</p>
+      <section class="hero-section">
+        <p>Косметологічна клініка</p>
+        <h1 class="brand-name color-accent capitalized">Beaty Zone</h1>
+        <button class="button" type="button">Замовити дзвінок</button>
+        <p class="bottom-text">
+          Запишись та отримай безкоштовну консультацію нашого косметолога
+        </p>
       </section>
       <section id="about-us-section">
-        <h2>Перевтілюйтесь в <span>Beaty Zone!</span></h2>
-        <p>
-          Наша косметологічна клініка пропонує вам професійні послуги з догляду
-          за шкірою обличчя та тіла.
-        </p>
-        <p>
-          B <span>Beauty Zone</span> ми гарантуємо найвищі стандарти якості та
-          приємний сервіс. Наші косметологічні процедури та препарати допоможуть
-          вам підтримувати свою красу та молодість. З нами краса назавжди!
-        </p>
+        <div class="about-us-text">
+          <h2 class="section-heading">
+            Перевтілюйтесь в
+            <span class="brand-name color-accent">beaty zone!</span>
+          </h2>
+          <p>
+            Наша косметологічна клініка пропонує вам професійні послуги з
+            догляду за шкірою обличчя та тіла.
+          </p>
+          <p>
+            B <span class="brand-name">Beauty Zone</span> ми гарантуємо найвищі
+            стандарти якості та приємний сервіс. Наші косметологічні процедури
+            та препарати допоможуть вам підтримувати свою красу та молодість. З
+            нами краса назавжди!
+          </p>
+        </div>
         <article>
           <img
             src="./images/png/client-before-and-after.png"
@@ -82,8 +91,10 @@
         </article>
       </section>
       <section id="why-us-section">
-        <h2>Чому люди <span>обирають нас</span></h2>
-        <ul>
+        <h2 class="section-heading">
+          Чому люди <span class="color-accent">обирають нас</span>
+        </h2>
+        <ul class="advantages-list">
           <li>
             <article>
               <img
@@ -114,39 +125,43 @@
         </ul>
       </section>
       <section id="our-procedures-section">
-        <h2>Наші <span>процедури</span></h2>
-        <ul>
+        <h2 class="section-heading">
+          Наші <span class="color-accent">процедури</span>
+        </h2>
+        <ul class="procedures-list">
           <li>
-            <article>
+            <article class="procedure-card">
               <img
                 src="/images/png/cosmetologist-applying-facial-mask.png"
                 alt="Косметолог наносить маску на лице пацієнтки"
               />
-              <h2>Маски для обличчя</h2>
+              <h2 class="procedure-name-heading">Маски для обличчя</h2>
             </article>
           </li>
           <li>
-            <article>
+            <article class="procedure-card">
               <img
                 src="/images/png/cosmetologist-injecting-cosmetic-solution.png"
                 alt="Косметолог вводить косметологічний розчин"
               />
-              <h2>Ін'єкції для обличчя</h2>
+              <h2 class="procedure-name-heading">Ін'єкції для обличчя</h2>
             </article>
           </li>
           <li>
-            <article>
+            <article class="procedure-card">
               <img
                 src="/images/png/cosmetologist-performing-ultrasound-peeling.png"
                 alt="Косметолог проводить ультразвуковий пілінг"
               />
-              <h2>Очищення обличчя</h2>
+              <h2 class="procedure-name-heading">Очищення обличчя</h2>
             </article>
           </li>
         </ul>
       </section>
       <section id="contacts-section">
-        <h2>Як нас <span>знайти</span></h2>
+        <h2 class="section-heading">
+          Як нас <span class="color-accent">знайти</span>
+        </h2>
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2537.475791668505!2d30.775223399999994!3d50.50671339999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4d97de411b701%3A0x48116b28f7f00d94!2z0LLRg9C70LjRhtGPINCi0LDRgNCw0YHQsCDQqNC10LLRh9C10L3QutCwLCA1LCDQkdGA0L7QstCw0YDQuCwg0JrQuNGX0LLRgdGM0LrQsCDQvtCx0LvQsNGB0YLRjCwgMDc0MDA!5e0!3m2!1suk!2sua!4v1763834613967!5m2!1suk!2sua"
           width="600"
@@ -156,6 +171,16 @@
           loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"
         ></iframe>
+        <div class="contact-form">
+          <p class="form-heading">
+            Запишіться <span class="color-accent">безкоштовно</span> та
+            отримайте подарунок
+          </p>
+          <button class="button" type="button">Записатись безкоштовно</button>
+          <p class="bottom-text">
+            Натискаючи на кнопку я погоджуюсь з політикою конфіденційності
+          </p>
+        </div>
         <!-- Contact form -->
       </section>
     </main>
@@ -166,29 +191,38 @@
         </a>
         <ul>
           <li>
-            <a href="#about-us-section">Про нас</a>
+            <a class="footer-link" href="#about-us-section">Про нас</a>
           </li>
           <li>
-            <a href="#why-us-section">Чому ми</a>
+            <a class="footer-link" href="#why-us-section">Чому ми</a>
           </li>
           <li>
-            <a href="#our-procedures-section">Наші процедури</a>
+            <a class="footer-link" href="#our-procedures-section"
+              >Наші процедури</a
+            >
           </li>
           <li>
-            <a href="#contacts-section">Контакти</a>
+            <a class="footer-link" href="#contacts-section">Контакти</a>
           </li>
         </ul>
       </nav>
       <address>
         <ul>
           <li>
-            <a href="tel:+380960000007">+ 38 (096) 000 00 07</a>
+            <a class="footer-link contact" href="tel:+380960000007"
+              >+ 38 (096) 000 00 07</a
+            >
           </li>
           <li>
-            <a href="mailto:beautyzone@gmail.com">beautyzone@gmail.com</a>
+            <a class="footer-link contact" href="mailto:beautyzone@gmail.com"
+              >beautyzone@gmail.com</a
+            >
           </li>
           <li>
-            <a href="https://maps.app.goo.gl/H29YdDP65PupGwuy7">
+            <a
+              class="footer-link contact"
+              href="https://maps.app.goo.gl/H29YdDP65PupGwuy7"
+            >
               Україна, м. Київ, вул. Тараса Шевченка 5
             </a>
           </li>
@@ -217,8 +251,8 @@
           /></a>
         </li>
       </ul>
-      <a href="#">Політика конфіденційності</a>
-      <p>© 2022 Дані захищені</p>
+      <a class="footer-link" href="#">Політика конфіденційності</a>
+      <p class="copyright">&copy; 2022 Дані захищені</p>
     </footer>
   </body>
 </html>
