@@ -1,15 +1,19 @@
 @use "../utils/variables" as v;
 
+* {
+  box-sizing: border-box;
+}
+
 html {
   font-family: "Roboto", sans-serif;
   font-size: 18px;
   color: var(--color-primary-darkblue);
-  box-sizing: border-box;
+  background-color: pink;
 }
 
 body {
   margin: 0;
-  padding: 40px;
+  padding: 0;
 }
 
 ul {

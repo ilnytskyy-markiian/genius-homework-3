@@ -1,7 +1,33 @@
 .procedure-card {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  background-image: linear-gradient(
+    180deg,
+    rgba(1, 28, 68, 0) 47%,
+    rgba(1, 28, 68, 0.7258) 83%,
+    rgba(1, 28, 68, 1) 99%
+  );
+  // width: 344px;
+  height: 456px;
+  padding-bottom: 32px;
+  border-radius: 4px 120px 4px 120px;
+
   &__heading {
     color: var(--color-primary-white);
     font-size: 22px;
     line-height: 1.2;
+  }
+
+  &__img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
   }
 }

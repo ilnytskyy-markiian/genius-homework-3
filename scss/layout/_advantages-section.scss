@@ -1,13 +1,38 @@
 .advantages-section {
+  width: 1060px;
   margin-bottom: 96px;
 
   &__heading {
     margin-bottom: 48px;
   }
 
+  &__list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item {
+    background-color: var(--color-primary-white);
+    border-radius: 32px;
+    padding: 24px 32px;
+    width: 316px;
+    height: 180px;
+  }
+
+  &__icon {
+    display: block;
+    justify-self: center;
+    margin: 0 auto;
+    width: 48px;
+    height: 48px;
+    margin-bottom: 8px;
+    fill: var(--color-primary-brightblue);
+  }
+
   &__text {
     font-size: 18px;
     line-height: 1.3;
     color: black;
+    text-align: center;
   }
 }

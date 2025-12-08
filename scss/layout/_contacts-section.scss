@@ -1,11 +1,20 @@
 .contacts-section {
+  width: 1060px;
+  margin-bottom: 94px;
+
   &__heading {
     margin-bottom: 48px;
   }
 
+  &__container {
+    display: flex;
+    gap: 32px;
+  }
+
   &__map {
+    border: 0;
+    border-radius: 32px;
     width: 600px;
     height: 450px;
-    border: 1px solid black;
   }
 }

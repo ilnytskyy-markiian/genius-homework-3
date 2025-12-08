@@ -1,10 +1,42 @@
 .header {
+  display: flex;
+  justify-content: space-between;
+  padding: 32px 0;
+
+  &__logo {
+    width: 74px;
+    height: 42px;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    gap: 56px;
+  }
+
   &__link {
+    display: inline-block;
     text-decoration: none;
     color: var(--color-primary-darkblue);
 
     &:hover {
       color: var(--color-primary-brightblue);
+    }
+  }
+
+  &__socials {
+    display: flex;
+    justify-content: space-between;
+    gap: 42px;
+  }
+
+  &__icon {
+    width: 32px;
+    height: 32px;
+    fill: var(--color-primary-darkblue);
+
+    &:hover {
+      fill: var(--color-primary-brightblue);
     }
   }
 }

@@ -1,11 +1,60 @@
+@use "../utils/variables" as v;
+
 .footer {
+  padding: 56px 0;
+  background-color: var(--color-primary-darkblue);
+
+  &__container {
+    display: flex;
+  }
+
+  &__logo {
+    flex: 1 1 25%;
+    fill: var(--color-primary-brightblue);
+    width: 83px;
+    height: 42px;
+  }
+
+  &__nav {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 25%;
+  }
+
   &__link {
+    max-width: 203px;
+    font-style: normal;
     font-size: 16px;
+    margin-bottom: 16px;
     color: var(--color-primary-white);
   }
 
+  &__contacts {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 25%;
+  }
+
+  &__address {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__socials {
+    display: flex;
+    gap: 24px;
+  }
+
   &__copyright {
+    display: flex;
+    flex-direction: column;
     font-size: 13px;
-    color: var(--color-secondary-lighergray);
+    color: var(--color-secondary-lightergray);
+  }
+
+  &__icon {
+    width: 42px;
+    height: 42px;
+    fill: var(--color-primary-white);
   }
 }
