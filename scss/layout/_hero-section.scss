@@ -10,12 +10,12 @@
         rgba(255, 255, 255, 0.1932) 56%,
         rgba(255, 255, 255, 0) 74%
       ),
-      url("images/png/hero-background.png");
+      url("/images/png/hero-background.png");
     // background-size: cover;
     background-size: 1152px;
     background-repeat: no-repeat;
     background-position: right, top right -24px;
-    mask-image: url("masks/hero-mask.svg");
+    mask-image: url("/masks/hero-mask.svg");
     mask-size: 1998px;
     mask-repeat: no-repeat;
     mask-position: bottom 0 right calc(50% - 131px);
