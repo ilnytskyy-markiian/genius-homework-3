@@ -6,7 +6,7 @@
 
   &__label,
   &__control {
-    // color: var(--color-primary-white);
+    color: var(--color-primary-white);
     font-size: 13px;
   }
 
@@ -21,6 +21,8 @@
   }
 
   &__btn {
+    display: block;
+    margin: 0 auto;
     margin-bottom: 8px;
   }
 }

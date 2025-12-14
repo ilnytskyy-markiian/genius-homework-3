@@ -1,8 +1,14 @@
 .form {
+  width: 310px;
+
   &__heading {
     color: var(--color-primary-white);
+    max-width: 272px;
     font-weight: 600;
     font-size: 22px;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 32px;
 
     &--highlight {
       color: var(--color-primary-brightblue);
@@ -13,7 +19,8 @@
     color: var(--color-secondary-lightergray);
     font-size: 12px;
     line-height: 1.5;
-    text-underline-offset: 8px;
+    text-underline-offset: 2px;
+    text-align: center;
   }
 
   &__link {
