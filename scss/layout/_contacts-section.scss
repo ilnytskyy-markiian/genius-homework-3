@@ -13,6 +13,9 @@
 
   &__form {
     background-color: var(--color-primary-darkblue);
+    background-image: url("images/svg/modal-and-footer-bg.svg");
+    background-size: 800%;
+    background-position: center;
     border-radius: 32px;
     padding: 48px 56px;
   }
