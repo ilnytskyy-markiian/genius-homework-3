@@ -28,6 +28,7 @@
   &__images {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     width: 500px;
     height: 700px;
   }
