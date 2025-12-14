@@ -1,5 +1,8 @@
 .about-us-section {
-  padding-bottom: 176px;
+  background-image: url("/images/svg/stars-background.svg");
+  background-position: top 40px right;
+  background-size: 408px;
+  background-repeat: no-repeat;
 
   &__container {
     display: flex;
