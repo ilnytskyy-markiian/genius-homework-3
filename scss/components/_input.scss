@@ -17,6 +17,7 @@
     width: 310px;
     padding: 18px 32px;
     background-color: transparent;
+    transition: color 0.2s, border-color 0.2s, background-color 0.2s;
 
     &::placeholder {
       color: var(--color-primary-white);
@@ -36,5 +37,10 @@
     display: block;
     margin: 0 auto;
     margin-bottom: 8px;
+
+    &:focus,
+    &:hover {
+      color: var(--color-primary-white);
+    }
   }
 }
