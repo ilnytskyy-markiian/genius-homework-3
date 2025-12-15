@@ -30,6 +30,11 @@
     font-size: 16px;
     margin-bottom: 16px;
     color: var(--color-primary-white);
+    transition: color 0.2s;
+
+    &:hover {
+      color: var(--color-primary-brightblue);
+    }
   }
 
   &__contacts {
@@ -59,5 +64,10 @@
     width: 42px;
     height: 42px;
     fill: var(--color-primary-white);
+    transition: fill 0.2s;
+
+    &:hover {
+      fill: var(--color-primary-brightblue);
+    }
   }
 }

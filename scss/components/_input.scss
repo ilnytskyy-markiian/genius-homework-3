@@ -4,20 +4,32 @@
   // position: relative;
   margin-bottom: 16px;
 
-  &__label,
-  &__control {
+  &__label {
     color: var(--color-primary-white);
     font-size: 13px;
   }
 
   &__control {
-    // color: var(--color-primary-white);
     font-size: 13px;
     border: 2px solid var(--color-secondary-lightergray);
+    color: var(--color-primary-white);
     border-radius: 32px;
     width: 310px;
     padding: 18px 32px;
     background-color: transparent;
+
+    &::placeholder {
+      color: var(--color-primary-white);
+      font-size: 13px;
+    }
+
+    &:focus {
+      border-color: var(--color-primary-brightblue);
+    }
+
+    &:disabled {
+      background-color: var(--color-secondary-lightergray);
+    }
   }
 
   &__btn {

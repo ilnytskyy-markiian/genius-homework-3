@@ -27,6 +27,7 @@
     display: inline-block;
     text-decoration: none;
     color: var(--color-primary-darkblue);
+    transition: color 0.2s;
 
     &:hover {
       color: var(--color-primary-brightblue);
@@ -43,6 +44,7 @@
     width: 32px;
     height: 32px;
     fill: var(--color-primary-darkblue);
+    transition: fill 0.2s;
 
     &:hover {
       fill: var(--color-primary-brightblue);

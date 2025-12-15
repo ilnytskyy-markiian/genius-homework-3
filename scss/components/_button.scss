@@ -1,10 +1,19 @@
 .btn {
-  font-family: Roboto;
-  border: transparent;
+  font-family: 'Roboto';
+  border: 2px solid var(--color-primary-brightblue);
   background-color: var(--color-primary-brightblue);
   color: var(--color-primary-white);
+  cursor: pointer;
   font-size: 18px;
   font-weight: 600;
-  padding: 16px 32px;
   border-radius: 32px;
+  padding: 16px 32px;
+
+  transition: background-color 0.2s, color 0.2s;
+
+  &:hover,
+  &:focus {
+    background-color: transparent;
+    color: var(--color-primary-darkblue);
+  }
 }
