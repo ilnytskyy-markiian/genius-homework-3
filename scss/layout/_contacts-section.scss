@@ -1,3 +1,5 @@
+@use "../utils/variables" as v;
+
 .contacts-section {
   width: 1060px;
   margin-bottom: 94px;
@@ -8,6 +10,7 @@
 
   &__container {
     display: flex;
+    flex-direction: row;
     gap: 32px;
   }
 
@@ -24,5 +27,24 @@
     border: 0;
     border-radius: 32px;
     width: 600px;
+  }
+
+  @media screen and (max-width: v.$bp-mobile) {
+    &__heading {
+      margin-bottom: 24px;
+    }
+
+    &__container {
+      flex-direction: column;
+      gap: 24px;
+    }
+
+    &__map {
+      position: relative;
+      top: 0;
+      left: -20px;
+      width: calc(100% + 40px);
+      border-radius: 0;
+    }
   }
 }

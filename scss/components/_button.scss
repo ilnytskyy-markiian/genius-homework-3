@@ -1,5 +1,7 @@
+@use "../utils/variables" as v;
+
 .btn {
-  font-family: 'Roboto';
+  font-family: "Roboto";
   outline: none;
   border: 2px solid var(--color-primary-brightblue);
   background-color: var(--color-primary-brightblue);
@@ -16,5 +18,11 @@
   &:focus {
     background-color: transparent;
     color: var(--color-primary-darkblue);
+  }
+
+  @media screen and (max-width: v.$bp-mobile) {
+    font-size: 16px;
+    padding: 12px 24px;
+    border-radius: 24px;
   }
 }

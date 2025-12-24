@@ -1,3 +1,5 @@
+@use "../utils/variables" as v;
+
 .procedures-section {
   width: 1216px;
   margin-bottom: 96px;
@@ -22,6 +24,7 @@
 
   &__item {
     flex-basis: calc((100% - 32px) / 3);
+    overflow: hidden;
   }
 
   &__btn {
@@ -40,6 +43,23 @@
     height: 16px;
     &--next {
       transform: rotate(180deg);
+    }
+  }
+
+  @media screen and (max-width: v.$bp-mobile) {
+    margin-bottom: 40px;
+
+    &__item {
+      flex-basis: 100%;
+
+      &:nth-child(2),
+      &:last-child {
+        display: none;
+      }
+    }
+
+    &__btn {
+      display: none;
     }
   }
 }

@@ -1,15 +1,46 @@
+@use "../utils/variables" as v;
+
+$gradient-mask-mask-size-desktop: 2022px;
+$gradient-mask-mask-size-mobile: 1085px;
+
 .advantages-section {
   position: relative;
   width: 1060px;
   margin-bottom: 96px;
 
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -50%;
+    width: 2022px;
+    height: 1506px;
+    background-image: linear-gradient(
+      180deg,
+      rgba(43, 127, 255, 0.2) 33%,
+      rgba(43, 127, 255, 0) 63%,
+      rgba(43, 127, 255, 0) 89%
+    );
+    mask-image: url("masks/gradient-mask.svg");
+    mask-size: $gradient-mask-mask-size-desktop;
+    mask-position: top center;
+    mask-origin: padding-box;
+    z-index: -1;
+  }
+
   &__heading {
+    margin: 0 auto;
+    max-width: 432px;
+    padding-top: 204px;
     margin-bottom: 48px;
   }
 
   &__list {
     display: flex;
+    flex-direction: row;
+    align-items: center;
     justify-content: space-between;
+    gap: 56px;
   }
 
   &__item {
@@ -36,5 +67,33 @@
     line-height: 1.3;
     color: black;
     text-align: center;
+  }
+
+  @media screen and (max-width: v.$bp-mobile) {
+    &::before {
+      width: 1084px;
+      height: 816px;
+      left: -90%;
+      background-image: linear-gradient(
+        180deg,
+        rgba(43, 127, 255, 0.2) 8%,
+        rgba(43, 127, 255, 0) 86%,
+        rgba(43, 127, 255, 0) 93%
+      );
+      mask-image: url("masks/gradient-mask.svg");
+      mask-size: $gradient-mask-mask-size-mobile;
+    }
+
+    &__heading {
+      max-width: 210px;
+      padding-top: 92px;
+      margin-bottom: 24px;
+    }
+
+    &__list {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
   }
 }

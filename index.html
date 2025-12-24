@@ -50,6 +50,11 @@
             </svg>
           </a>
         </div>
+        <button class="header__burger-btn" type="button">
+          <svg class="header__icon header__burger-icon">
+            <use href="images/svg/icons.svg#burger-menu-icon"></use>
+          </svg>
+        </button>
       </div>
     </header>
     <main>
@@ -92,7 +97,8 @@
               >
               ми гарантуємо найвищі стандарти якості та приємний сервіс. Наші
               косметологічні процедури та препарати допоможуть вам підтримувати
-              свою красу та молодість. З нами краса назавжди!
+              свою красу та молодість.
+              <br />З нами краса назавжди!
             </p>
           </div>
           <div class="about-us-section__images">
@@ -109,107 +115,105 @@
           </div>
         </div>
       </section>
-      <div class="gradient-mask">
-        <section class="advantages-section section" id="advantages-section">
-          <div class="advantages-section__container">
-            <h2
-              class="advantages-section__heading section__heading section__heading--center"
-            >
-              Чому люди
-              <span class="section__heading--highlight">обирають нас</span>
-            </h2>
-            <ul class="advantages-section__list">
-              <li class="advantages-section__item">
-                <svg class="advantages-section__icon">
-                  <use href="images/svg/icons.svg#science-icon"></use>
-                </svg>
-                <p class="advantages-section__text">
-                  Всі наші косметологи мають вищу медичну освіту та стаж роботи
-                  від 5 років
-                </p>
-              </li>
-              <li class="advantages-section__item">
-                <svg class="advantages-section__icon">
-                  <use
-                    href="/images/svg/icons.svg#cosmetic-appliances-icon"
-                  ></use>
-                </svg>
-                <p class="advantages-section__text">
-                  Використовуємо тільки професійне обладнання та косметику,
-                  перевірену часом
-                </p>
-              </li>
-              <li class="advantages-section__item">
-                <svg class="advantages-section__icon">
-                  <use href="images/svg/icons.svg#crown-icon"></use>
-                </svg>
-                <p class="advantages-section__text">
-                  Наша мета - підкреслити переваги та приховати недоліки, а не
-                  переробити
-                </p>
-              </li>
-            </ul>
-          </div>
-        </section>
-        <section class="procedures-section section" id="procedures-section">
+      <section class="advantages-section section" id="advantages-section">
+        <div class="advantages-section__container">
           <h2
-            class="procedures-section__heading section__heading section__heading--center"
+            class="advantages-section__heading section__heading section__heading--center"
           >
-            Наші <span class="section__heading--highlight">процедури</span>
+            Чому люди
+            <span class="section__heading--highlight">обирають нас</span>
           </h2>
-          <div class="procedures-section__container">
-            <button class="procedures-section__btn" type="button">
-              <svg
-                class="procedures-section__icon procedures-section__icon--prev"
-              >
-                <use href="images/svg/icons.svg#arrow-icon"></use>
+          <ul class="advantages-section__list">
+            <li class="advantages-section__item">
+              <svg class="advantages-section__icon">
+                <use href="images/svg/icons.svg#science-icon"></use>
               </svg>
-            </button>
-            <ul class="procedures-section__list">
-              <li class="procedures-section__item">
-                <article class="procedure-card">
-                  <h2 class="procedure-card__heading">Маски для обличчя</h2>
-                  <img
-                    class="procedure-card__img"
-                    src="images/png/cosmetologist-applying-facial-mask.jpg"
-                    alt="Косметолог наносить маску на лице пацієнтки"
-                  />
-                </article>
-              </li>
-              <li class="procedures-section__item">
-                <article class="procedure-card">
-                  <h2 class="procedure-card__heading">Ін'єкції для обличчя</h2>
-                  <img
-                    class="procedure-card__img"
-                    src="images/png/cosmetologist-injecting-cosmetic-solution.jpg"
-                    alt="Косметолог вводить косметологічний розчин"
-                  />
-                </article>
-              </li>
-              <li class="procedures-section__item">
-                <article class="procedure-card">
-                  <h2 class="procedure-card__heading">Очищення обличчя</h2>
-                  <img
-                    class="procedure-card__img"
-                    src="images/png/cosmetologist-performing-ultrasound-peeling.jpg"
-                    alt="Косметолог проводить ультразвуковий пілінг"
-                  />
-                </article>
-              </li>
-            </ul>
-            <button
-              class="procedures-section__btn procedures-section__btn--next"
-              type="button"
+              <p class="advantages-section__text">
+                Всі наші косметологи мають вищу медичну освіту та стаж роботи
+                від 5 років
+              </p>
+            </li>
+            <li class="advantages-section__item">
+              <svg class="advantages-section__icon">
+                <use
+                  href="/images/svg/icons.svg#cosmetic-appliances-icon"
+                ></use>
+              </svg>
+              <p class="advantages-section__text">
+                Використовуємо тільки професійне обладнання та косметику,
+                перевірену часом
+              </p>
+            </li>
+            <li class="advantages-section__item">
+              <svg class="advantages-section__icon">
+                <use href="images/svg/icons.svg#crown-icon"></use>
+              </svg>
+              <p class="advantages-section__text">
+                Наша мета - підкреслити переваги та приховати недоліки, а не
+                переробити
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="procedures-section section" id="procedures-section">
+        <h2
+          class="procedures-section__heading section__heading section__heading--center"
+        >
+          Наші <span class="section__heading--highlight">процедури</span>
+        </h2>
+        <div class="procedures-section__container">
+          <button class="procedures-section__btn" type="button">
+            <svg
+              class="procedures-section__icon procedures-section__icon--prev"
             >
-              <svg
-                class="procedures-section__icon procedures-section__icon--next"
-              >
-                <use href="images/svg/icons.svg#arrow-icon"></use>
-              </svg>
-            </button>
-          </div>
-        </section>
-      </div>
+              <use href="images/svg/icons.svg#arrow-icon"></use>
+            </svg>
+          </button>
+          <ul class="procedures-section__list">
+            <li class="procedures-section__item">
+              <article class="procedure-card">
+                <h2 class="procedure-card__heading">Маски для обличчя</h2>
+                <img
+                  class="procedure-card__img"
+                  src="images/png/cosmetologist-applying-facial-mask.jpg"
+                  alt="Косметолог наносить маску на лице пацієнтки"
+                />
+              </article>
+            </li>
+            <li class="procedures-section__item">
+              <article class="procedure-card">
+                <h2 class="procedure-card__heading">Ін'єкції для обличчя</h2>
+                <img
+                  class="procedure-card__img"
+                  src="images/png/cosmetologist-injecting-cosmetic-solution.jpg"
+                  alt="Косметолог вводить косметологічний розчин"
+                />
+              </article>
+            </li>
+            <li class="procedures-section__item">
+              <article class="procedure-card">
+                <h2 class="procedure-card__heading">Очищення обличчя</h2>
+                <img
+                  class="procedure-card__img"
+                  src="images/png/cosmetologist-performing-ultrasound-peeling.jpg"
+                  alt="Косметолог проводить ультразвуковий пілінг"
+                />
+              </article>
+            </li>
+          </ul>
+          <button
+            class="procedures-section__btn procedures-section__btn--next"
+            type="button"
+          >
+            <svg
+              class="procedures-section__icon procedures-section__icon--next"
+            >
+              <use href="images/svg/icons.svg#arrow-icon"></use>
+            </svg>
+          </button>
+        </div>
+      </section>
       <section class="contacts-section section" id="contacts-section">
         <h2
           class="contacts-section__heading section__heading section__heading--center"
@@ -353,64 +357,64 @@
     <div class="backdrop is-hidden">
       <div class="modal">
         <button class="modal__btn modal-btn-close" type="button">
-        <svg class="modal__icon">
-          <use href="images/svg/icons.svg#close-icon"></use>
-        </svg>
-      </button>
+          <svg class="modal__icon">
+            <use href="images/svg/icons.svg#close-icon"></use>
+          </svg>
+        </button>
         <div class="modal__container">
           <h2 class="modal__heading">Замовити дзвінок</h2>
           <div class="form">
-              <h2 class="form__heading">
-                Запишіться
-                <span class="form__heading--highlight">безкоштовно</span> та
-                отримайте подарунок
-              </h2>
-              <form name="form" class="form__inputs">
-                <div class="input">
-                  <label
-                    class="input__label visually-hidden"
-                    for="first-and-last-name"
-                  >
-                    Ваше ім'я та прізвище
-                  </label>
-                  <input
-                    class="input__control"
-                    type="text"
-                    id="first-and-last-name"
-                    placeholder="Ваше ім'я та прізвище"
-                  />
-                </div>
-                <div class="input">
-                  <label class="input__label visually-hidden" for="tel">
-                    Ваш номер телефону
-                  </label>
-                  <input
-                    class="input__control"
-                    type="tel"
-                    id="tel"
-                    placeholder="Ваш номер телефону"
-                  />
-                </div>
-                <div class="input">
-                  <label class="input__label visually-hidden" for="email">
-                    Ваша електронна пошта
-                  </label>
-                  <input
-                    class="input__control"
-                    type="email"
-                    id="email"
-                    placeholder="Ваша електронна пошта"
-                  />
-                </div>
-                <button class="input__btn btn" type="submit">
-                  Записатись безкоштовно
-                </button>
-              </form>
-              <p class="form__terms-text">
-                Натискаючи на кнопку я погоджуюсь з
-                <a class="form__link" href="#"> політикою конфіденційності </a>
-              </p>
-            </div>
+            <h2 class="form__heading">
+              Запишіться
+              <span class="form__heading--highlight">безкоштовно</span> та
+              отримайте подарунок
+            </h2>
+            <form name="form" class="form__inputs">
+              <div class="input">
+                <label
+                  class="input__label visually-hidden"
+                  for="first-and-last-name"
+                >
+                  Ваше ім'я та прізвище
+                </label>
+                <input
+                  class="input__control"
+                  type="text"
+                  id="first-and-last-name"
+                  placeholder="Ваше ім'я та прізвище"
+                />
+              </div>
+              <div class="input">
+                <label class="input__label visually-hidden" for="tel">
+                  Ваш номер телефону
+                </label>
+                <input
+                  class="input__control"
+                  type="tel"
+                  id="tel"
+                  placeholder="Ваш номер телефону"
+                />
+              </div>
+              <div class="input">
+                <label class="input__label visually-hidden" for="email">
+                  Ваша електронна пошта
+                </label>
+                <input
+                  class="input__control"
+                  type="email"
+                  id="email"
+                  placeholder="Ваша електронна пошта"
+                />
+              </div>
+              <button class="input__btn btn" type="submit">
+                Записатись безкоштовно
+              </button>
+            </form>
+            <p class="form__terms-text">
+              Натискаючи на кнопку я погоджуюсь з
+              <a class="form__link" href="#"> політикою конфіденційності </a>
+            </p>
+          </div>
         </div>
       </div>
     </div>

@@ -1,3 +1,5 @@
+@use "../utils/variables" as v;
+
 .header {
   position: absolute;
   width: 100%;
@@ -5,11 +7,19 @@
 
   .section {
     display: flex;
+    gap: 56px;
     justify-content: space-between;
     max-width: 1440px;
     padding: 32px 100px;
     backdrop-filter: blur(5px);
     background-color: rgba(255, 255, 255, 0.25);
+
+    @media screen and (max-width: v.$bp-mobile) {
+      padding: 16px 20px;
+      padding-bottom: 0;
+      backdrop-filter: none;
+      background-color: transparent;
+    }
   }
 
   &__logo {
@@ -21,6 +31,10 @@
     display: flex;
     justify-content: space-between;
     gap: 56px;
+
+    @media screen and (max-width: v.$bp-mobile) {
+      display: none;
+    }
   }
 
   &__link {
@@ -38,6 +52,10 @@
     display: flex;
     justify-content: space-between;
     gap: 42px;
+
+    @media screen and (max-width: v.$bp-mobile) {
+      display: none;
+    }
   }
 
   &__icon {
@@ -49,5 +67,25 @@
     &:hover {
       fill: var(--color-primary-brightblue);
     }
+  }
+
+  &__burger-btn {
+    display: none;
+    border: none;
+    background-color: transparent;
+    width: 24px;
+    height: 24px;
+
+    @media screen and (max-width: v.$bp-mobile) {
+      display: inline-block;
+    }
+  }
+
+  &__burger-icon {
+    width: 24px;
+    height: 24px;
+
+    fill: var(--color-primary-white);
+    cursor: pointer;
   }
 }
