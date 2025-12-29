@@ -7,19 +7,13 @@
 
   .section {
     display: flex;
+    justify-content: space-between;
     gap: 56px;
     justify-content: space-between;
     max-width: 1440px;
     padding: 32px 100px;
     backdrop-filter: blur(5px);
     background-color: rgba(255, 255, 255, 0.25);
-
-    @media screen and (max-width: v.$bp-mobile) {
-      padding: 16px 20px;
-      padding-bottom: 0;
-      backdrop-filter: none;
-      background-color: transparent;
-    }
   }
 
   &__logo {
@@ -31,9 +25,27 @@
     display: flex;
     justify-content: space-between;
     gap: 56px;
+  }
 
-    @media screen and (max-width: v.$bp-mobile) {
-      display: none;
+  &__socials {
+    display: flex;
+    justify-content: space-between;
+    gap: 42px;
+  }
+
+  &__icon {
+    width: 32px;
+    height: 32px;
+    fill: var(--color-primary-darkblue);
+    transition: fill 0.2s;
+
+    &:hover {
+      fill: var(--color-primary-brightblue);
+    }
+
+    &--logo {
+      width: 74px;
+      height: 42px;
     }
   }
 
@@ -48,44 +60,58 @@
     }
   }
 
-  &__socials {
-    display: flex;
-    justify-content: space-between;
-    gap: 42px;
-
-    @media screen and (max-width: v.$bp-mobile) {
-      display: none;
-    }
-  }
-
-  &__icon {
-    width: 32px;
-    height: 32px;
-    fill: var(--color-primary-darkblue);
-    transition: fill 0.2s;
-
-    &:hover {
-      fill: var(--color-primary-brightblue);
-    }
-  }
-
   &__burger-btn {
     display: none;
     border: none;
     background-color: transparent;
     width: 24px;
     height: 24px;
-
-    @media screen and (max-width: v.$bp-mobile) {
-      display: inline-block;
-    }
   }
 
   &__burger-icon {
-    width: 24px;
-    height: 24px;
-
     fill: var(--color-primary-white);
     cursor: pointer;
+  }
+
+  @media screen and (max-width: v.$bp-mobile) {
+    .section {
+      padding: 16px 20px;
+      padding-bottom: 0;
+      backdrop-filter: none;
+      background-color: transparent;
+    }
+
+    &__logo {
+      width: 57px;
+      height: 30px;
+    }
+
+    &__list {
+      display: none;
+    }
+
+    &__socials {
+      display: none;
+    }
+
+    &__icon {
+      &--logo {
+        width: 57px;
+        height: 30px;
+      }
+      &--close {
+        width: 16px;
+        height: 16px;
+      }
+    }
+
+    &__burger-btn {
+      display: block;
+    }
+
+    &__burger-icon {
+      width: 24px;
+      height: 24px;
+    }
   }
 }

@@ -6,18 +6,18 @@ $about-us-section-bg-size-mobile: 255px;
 .about-us-section {
   position: relative;
 
-  &:before {
-    content: "";
-    position: absolute;
-    top: 40px;
-    right: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url("images/svg/stars-background.svg");
-    background-position: top right;
-    background-size: $about-us-section-bg-size-desktop;
-    background-repeat: no-repeat;
-  }
+  // &:before {
+  //   content: "";
+  //   position: absolute;
+  //   top: 40px;
+  //   right: 0;
+  //   width: 100%;
+  //   height: 100%;
+  //   background-image: url("images/svg/stars-background.svg");
+  //   background-position: top right;
+  //   background-size: $about-us-section-bg-size-desktop;
+  //   background-repeat: no-repeat;
+  // }
 
   &__container {
     display: flex;
@@ -72,17 +72,17 @@ $about-us-section-bg-size-mobile: 255px;
   @media screen and (max-width: v.$bp-mobile) {
     padding: 0 20px;
 
-    &:before {
-      position: absolute;
-      top: 60px;
-      right: -180px;
-      width: 100%;
-      height: 100%;
-      background-image: url("images/svg/stars-background.svg");
-      background-position: bottom right;
-      background-size: $about-us-section-bg-size-mobile;
-      background-repeat: no-repeat;
-    }
+    // &:before {
+    //   position: absolute;
+    //   top: 100%;
+    //   right: 32px;
+    //   width: 32px;
+    //   height: 32px;
+    //   background-image: url("images/svg/star.svg");
+    //   background-position: bottom right;
+    //   background-size: 32px;
+    //   background-repeat: no-repeat;
+    // }
 
     &__heading {
       font-size: 32px;
