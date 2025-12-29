@@ -37,11 +37,12 @@ $hero-section-mask-size-mobile: 870px;
           rgba(255, 255, 255, 0) 74%
         ),
         url("images/png/hero-background.png");
-      padding-top: 71px;
       background-position: bottom;
       background-size: $hero-section-bg-size-mobile;
       mask-size: $hero-section-mask-size-mobile;
       mask-position: bottom;
+      padding: 0;
+      padding-top: 71px;
     }
   }
 
@@ -57,11 +58,13 @@ $hero-section-mask-size-mobile: 870px;
   }
 
   &__heading {
+    text-align: left;
     font-weight: 700;
     max-width: 530px;
     margin-bottom: 40px;
 
     @media screen and (max-width: v.$bp-mobile) {
+      text-align: center;
       font-size: 54px;
       margin-bottom: 32px;
     }

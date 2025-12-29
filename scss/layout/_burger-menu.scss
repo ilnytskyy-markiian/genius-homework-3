@@ -1,0 +1,81 @@
+@use "../utils/variables" as v;
+
+.burger-menu {
+  display: none;
+
+  @media screen and (max-width: v.$bp-mobile) {
+    display: block;
+    position: fixed;
+    flex-direction: column;
+    justify-content: start;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    gap: 16px;
+    padding: 16px 20px;
+    background-color: var(--color-primary-white);
+    overflow: auto;
+    transition: transform 0.2s;
+
+    &__logo {
+      width: 57px;
+      height: 30px;
+      margin-bottom: 32px;
+    }
+
+    &__list {
+      display: flex;
+      flex-direction: column;
+      font-size: 14px;
+      gap: 16px;
+      margin: 0;
+      margin-bottom: 16px;
+    }
+
+    &__socials {
+      display: flex;
+      justify-content: start;
+      gap: 16px;
+    }
+
+    &__link {
+      transition: color 0.2s;
+
+      &:hover {
+        color: var(--color-primary-brightblue);
+      }
+    }
+
+    &__icon {
+      width: 32px;
+      height: 32px;
+      transition: fill 0.2s;
+
+      &--logo {
+        width: 57px;
+        height: 30px;
+      }
+
+      &--close {
+        width: 16px;
+        height: 16px;
+      }
+
+      &:hover {
+        fill: var(--color-primary-brightblue);
+      }
+    }
+
+    &__btn {
+      border: none;
+      background-color: transparent;
+
+      &--close {
+        position: absolute;
+        top: 16px;
+        right: 20px;
+      }
+    }
+  }
+}

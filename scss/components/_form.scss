@@ -1,3 +1,5 @@
+@use "../utils/variables" as v;
+
 .form {
   width: 310px;
 
@@ -26,5 +28,13 @@
   &__link {
     color: var(--color-secondary-lightergray);
     text-decoration-line: underline;
+  }
+
+  @media screen and (max-width: v.$bp-mobile) {
+    width: auto;
+
+    &__heading {
+      margin-bottom: 24px;
+    }
   }
 }

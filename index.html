@@ -8,10 +8,63 @@
   </head>
   <body>
     <header class="header">
+      <div class="header__burger-menu burger-menu is-hidden burger-is-hidden">
+        <button
+          class="burger-menu__btn burger-menu__btn--close burger-btn-close"
+          type="button"
+        >
+          <svg class="burger-menu__icon burger-menu__icon--close">
+            <use href="images/svg/icons.svg#close-icon"></use>
+          </svg>
+        </button>
+        <div class="burger-menu__logo">
+          <a class="burger__link" href="index.html">
+            <img
+              class="burger-menu__icon burger-menu__icon--logo"
+              src="images/svg/logo.svg"
+              alt="Логотип косметологічної компанії Beauty Zone"
+            />
+          </a>
+        </div>
+        <ul class="burger-menu__list">
+          <li class="burger-menu__item">
+            <a class="burger-menu__link" href="#about-us-section">Про нас</a>
+          </li>
+          <li class="burger-menu__item">
+            <a class="burger-menu__link" href="#why-us-section">Чому ми</a>
+          </li>
+          <li class="burger-menu__item">
+            <a class="burger-menu__link" href="#our-procedures-section"
+              >Наші процедури</a
+            >
+          </li>
+          <li class="burger-menu__item">
+            <a class="burger-menu__link" href="#contacts-section">Контакти</a>
+          </li>
+        </ul>
+        <div class="burger-menu__socials">
+          <a class="burger-menu__link" href="#" target="_blank">
+            <svg class="burger-menu__icon">
+              <use href="images/svg/icons.svg#tel-icon"></use>
+            </svg>
+          </a>
+          <a class="burger-menu__link" href="#" target="_blank">
+            <svg class="burger-menu__icon">
+              <use href="images/svg/icons.svg#facebook-icon"></use>
+            </svg>
+          </a>
+          <a class="burger-menu__link" href="#" target="_blank">
+            <svg class="burger-menu__icon">
+              <use href="images/svg/icons.svg#instagram-icon"></use>
+            </svg>
+          </a>
+        </div>
+      </div>
       <div class="section">
         <div class="header__logo">
-          <a class="logo" href="index.html">
+          <a class="header__link" href="index.html">
             <img
+              class="header__icon header__icon--logo"
               src="images/svg/logo.svg"
               alt="Логотип косметологічної компанії Beauty Zone"
             />
@@ -50,7 +103,7 @@
             </svg>
           </a>
         </div>
-        <button class="header__burger-btn" type="button">
+        <button class="header__burger-btn burger-btn-open" type="button">
           <svg class="header__icon header__burger-icon">
             <use href="images/svg/icons.svg#burger-menu-icon"></use>
           </svg>
@@ -162,16 +215,19 @@
         >
           Наші <span class="section__heading--highlight">процедури</span>
         </h2>
-        <div class="procedures-section__container">
-          <button class="procedures-section__btn" type="button">
+        <div class="procedures-section__container swiper">
+          <button
+            class="procedures-section__btn swiper-button-prev"
+            type="button"
+          >
             <svg
               class="procedures-section__icon procedures-section__icon--prev"
             >
               <use href="images/svg/icons.svg#arrow-icon"></use>
             </svg>
           </button>
-          <ul class="procedures-section__list">
-            <li class="procedures-section__item">
+          <ul class="procedures-section__list swiper-wrapper">
+            <li class="procedures-section__item swiper-slide">
               <article class="procedure-card">
                 <h2 class="procedure-card__heading">Маски для обличчя</h2>
                 <img
@@ -181,7 +237,7 @@
                 />
               </article>
             </li>
-            <li class="procedures-section__item">
+            <li class="procedures-section__item swiper-slide">
               <article class="procedure-card">
                 <h2 class="procedure-card__heading">Ін'єкції для обличчя</h2>
                 <img
@@ -191,7 +247,7 @@
                 />
               </article>
             </li>
-            <li class="procedures-section__item">
+            <li class="procedures-section__item swiper-slide">
               <article class="procedure-card">
                 <h2 class="procedure-card__heading">Очищення обличчя</h2>
                 <img
@@ -203,7 +259,7 @@
             </li>
           </ul>
           <button
-            class="procedures-section__btn procedures-section__btn--next"
+            class="procedures-section__btn procedures-section__btn--next swiper-button-next"
             type="button"
           >
             <svg
@@ -212,6 +268,7 @@
               <use href="images/svg/icons.svg#arrow-icon"></use>
             </svg>
           </button>
+          <div class="swiper-pagination"></div>
         </div>
       </section>
       <section class="contacts-section section" id="contacts-section">
@@ -221,13 +278,15 @@
           Як нас <span class="section__heading--highlight">знайти</span>
         </h2>
         <div class="contacts-section__container">
-          <iframe
-            class="contacts-section__map"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2537.475791668505!2d30.775223399999994!3d50.50671339999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4d97de411b701%3A0x48116b28f7f00d94!2z0LLRg9C70LjRhtGPINCi0LDRgNCw0YHQsCDQqNC10LLRh9C10L3QutCwLCA1LCDQkdGA0L7QstCw0YDQuCwg0JrQuNGX0LLRgdGM0LrQsCDQvtCx0LvQsNGB0YLRjCwgMDc0MDA!5e0!3m2!1suk!2sua!4v1763834613967!5m2!1suk!2sua"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-          ></iframe>
+          <div class="contacts-section__map">
+            <iframe
+              class="contacts-section__map--container"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2537.475791668505!2d30.775223399999994!3d50.50671339999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4d97de411b701%3A0x48116b28f7f00d94!2z0LLRg9C70LjRhtGPINCi0LDRgNCw0YHQsCDQqNC10LLRh9C10L3QutCwLCA1LCDQkdGA0L7QstCw0YDQuCwg0JrQuNGX0LLRgdGM0LrQsCDQvtCx0LvQsNGB0YLRjCwgMDc0MDA!5e0!3m2!1suk!2sua!4v1763834613967!5m2!1suk!2sua"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
           <div class="contacts-section__form">
             <div class="form">
               <h2 class="form__heading">
@@ -288,8 +347,9 @@
     <footer class="footer">
       <div class="footer__container section">
         <div class="footer__logo">
-          <a class="logo" href="index.html">
+          <a href="index.html">
             <img
+              class="logo"
               src="images/svg/logo.svg"
               alt="Логотип фармацетвичної компанії Beauty Zone"
             />
@@ -330,6 +390,8 @@
               Україна, м. Київ, вул. Тараса Шевченка 5
             </a>
           </address>
+        </div>
+        <div class="footer__external-links">
           <div class="footer__socials">
             <a class="footer__link" href="#" target="_blank">
               <svg class="footer__icon">
@@ -347,9 +409,9 @@
               </svg>
             </a>
           </div>
-        </div>
-        <div class="footer__privacy-policy">
-          <a class="footer__link" href="#">Політика конфіденційності</a>
+          <a class="footer__privacy-policy footer__link" href="#"
+            >Політика конфіденційності</a
+          >
           <p class="footer__copyright">&copy; 2022 Дані захищені</p>
         </div>
       </div>
@@ -420,4 +482,5 @@
     </div>
   </body>
   <script src="js/modal.js"></script>
+  <script src="js/burger-menu.js"></script>
 </html>

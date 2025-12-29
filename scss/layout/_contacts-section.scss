@@ -21,15 +21,28 @@
     background-position: center;
     border-radius: 32px;
     padding: 48px 56px;
+
+    @media screen and (max-width: v.$bp-mobile) {
+      border-radius: 24px;
+      padding: 42px 24px;
+    }
   }
 
   &__map {
-    border: 0;
-    border-radius: 32px;
+    order: -1;
     width: 600px;
+
+    &--container {
+      width: 100%;
+      height: 100%;
+      border: 0;
+      border-radius: 32px;
+    }
   }
 
   @media screen and (max-width: v.$bp-mobile) {
+    margin-bottom: 0;
+
     &__heading {
       margin-bottom: 24px;
     }
@@ -40,11 +53,18 @@
     }
 
     &__map {
+      order: 1;
       position: relative;
-      top: 0;
-      left: -20px;
-      width: calc(100% + 40px);
-      border-radius: 0;
+      width: 100%;
+      height: 232px;
+
+      &--container {
+        position: absolute;
+        top: 0;
+        width: 100vw;
+        left: calc((100vw - 100%) / 2 * -1);
+        border-radius: 0;
+      }
     }
   }
 }
