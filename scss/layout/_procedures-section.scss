@@ -1,64 +1,41 @@
 @use "../utils/variables" as v;
 
 .procedures-section {
-  width: 1216px;
-  margin-bottom: 96px;
+  max-width: 1216px;
+  padding-bottom: 40px;
 
   &__heading {
     margin-bottom: 48px;
   }
 
   &__container {
-    display: flex;
-    align-items: center;
-    gap: 32px;
-  }
-
-  &__list {
-    flex: auto;
-    display: flex;
-    gap: 16px;
-    justify-content: space-between;
-    // flex-basis: calc((100% / 3) - 32px);
+    position: relative;
   }
 
   &__item {
-    flex-basis: calc((100% - 32px) / 3);
     overflow: hidden;
   }
 
-  &__btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 44px;
-    height: 44px;
-    border: 1px solid var(--color-primary-darkblue);
-    background-color: transparent;
-    border-radius: 50%;
-  }
+  &__button {
+    &--prev,
+    &--next {
+      background-color: transparent;
+      border: 1px solid black;
+      border-radius: 32px;
+    }
 
-  &__icon {
-    width: 16px;
-    height: 16px;
     &--next {
       transform: rotate(180deg);
+    }
+
+    & svg {
+      color: black;
+      width: 16px;
     }
   }
 
   @media screen and (max-width: v.$bp-mobile) {
-    margin-bottom: 40px;
-
-    &__item {
-      flex-basis: 100%;
-
-      &:nth-child(2),
-      &:last-child {
-        display: none;
-      }
-    }
-
-    &__btn {
+    &__button {
       display: none;
     }
   }
