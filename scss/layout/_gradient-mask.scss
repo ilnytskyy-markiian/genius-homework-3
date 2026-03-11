@@ -1,15 +1,28 @@
-// @use "../utils/variables" as v;
+@use "../utils/variables" as v;
 
-// .gradient-mask {
-//   @media screen and (max-width: v.$bp-mobile) {
-//     background-image: linear-gradient(
-//       180deg,
-//       rgba(43, 127, 255, 0.2) 12%,
-//       rgba(43, 127, 255, 0.04) 56%,
-//       rgba(43, 127, 255, 0) 57%
-//     );
-//     mask-size: $gradient-mask-mask-size-mobile;
-//     mask-repeat: no-repeat;
-//     padding-top: 92px;
-//   }
-// }
+.gradient-mask {
+  max-width: v.$gradient-mask-mask-size-desktop;
+  margin: auto;
+  overflow-x: hidden;
+  background-image: linear-gradient(
+    180deg,
+    rgba(43, 127, 255, 0.2) 33%,
+    rgba(43, 127, 255, 0) 63%,
+    rgba(43, 127, 255, 0) 89%
+  );
+  mask-image: url("masks/gradient-mask.svg");
+  mask-size: v.$gradient-mask-mask-size-desktop;
+  mask-position: center 20px;
+  mask-repeat: no-repeat;
+  padding-top: 92px;
+
+  @media screen and (max-width: v.$bp-mobile) {
+    background-image: linear-gradient(
+      180deg,
+      rgba(43, 127, 255, 0.2) 12%,
+      rgba(43, 127, 255, 0.04) 56%,
+      rgba(43, 127, 255, 0) 57%
+    );
+    mask-size: v.$gradient-mask-mask-size-mobile;
+  }
+}

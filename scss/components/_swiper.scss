@@ -1,0 +1,36 @@
+@use "../utils/variables" as v;
+
+.swiper {
+  width: 1064px;
+  padding-bottom: 43px;
+
+  &-pagination {
+    &-bullets {
+      &.swiper-pagination-horizontal {
+        bottom: 0;
+      }
+    }
+
+    &-bullet {
+      --swiper-pagination-color: var(--color-primary-brightblue);
+      --swiper-pagination-bullet-size: 11px;
+      --swiper-pagination-bullet-horizontal-gap: 12px;
+      --swiper-pagination-bullet-inactive-color: var(
+        --color-secondary-lightergray
+      );
+      --swiper-pagination-bullet-inactive-opacity: 1;
+    }
+  }
+
+  @media screen and (max-width: v.$bp-mobile) {
+    width: 320px;
+    padding-bottom: 24px;
+
+    &-pagination {
+      &-bullet {
+        --swiper-pagination-bullet-size: 8px;
+        --swiper-pagination-bullet-horizontal-gap: 6px;
+      }
+    }
+  }
+}

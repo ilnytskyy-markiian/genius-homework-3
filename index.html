@@ -1,8 +1,12 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="uk">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="css/main.min.css" />
     <title>Косметологічна клініка Beauty Zone</title>
   </head>
@@ -209,63 +213,53 @@
           </ul>
         </div>
       </section>
-      <section class="procedures-section section" id="procedures-section">
+      <section class="procedures-section section" id="our-procedures-section">
         <h2
           class="procedures-section__heading section__heading section__heading--center"
         >
           Наші <span class="section__heading--highlight">процедури</span>
         </h2>
-        <div class="procedures-section__container swiper">
+        <div class="procedures-section__container">
+          <div class="swiper">
+            <ul class="procedures-section__list swiper-wrapper">
+              <li class="procedures-section__item procedure-card swiper-slide">
+                <h2 class="procedure-card__header">Маски для обличчя</h2>
+                <img
+                  class="procedure-card__image"
+                  src="images/jpg/cosmetologist-applying-facial-mask.jpg"
+                  alt="Косметолог Beauty Zone наносить маску на лице пацієнтки"
+                />
+              </li>
+              <li class="procedures-section__item procedure-card swiper-slide">
+                <h2 class="procedure-card__header">Ін'єкції для обличчя</h2>
+                <img
+                  class="procedure-card__image"
+                  src="images/jpg/cosmetologist-injecting-cosmetic-solution.jpg"
+                  alt="Косметолог Beauty Zone вводить косметологічний розчин"
+                />
+              </li>
+              <li class="procedures-section__item procedure-card swiper-slide">
+                <h2 class="procedure-card__header">Очищення обличчя</h2>
+                <img
+                  class="procedure-card__image"
+                  src="images/jpg/cosmetologist-performing-ultrasound-peeling.jpg"
+                  alt="Косметолог Beauty Zoneпроводить ультразвуковий пілінг"
+                />
+              </li>
+            </ul>
+          </div>
           <button
-            class="procedures-section__btn swiper-button-prev"
-            type="button"
+            class="procedures-section__button procedures-section__button--next swiper-button-next"
           >
-            <svg
-              class="procedures-section__icon procedures-section__icon--prev"
-            >
-              <use href="images/svg/icons.svg#arrow-icon"></use>
+            <svg class="procedures-section__icon">
+              <use href="/images/svg/icons.svg#arrow-icon"></use>
             </svg>
           </button>
-          <ul class="procedures-section__list swiper-wrapper">
-            <li class="procedures-section__item swiper-slide">
-              <article class="procedure-card">
-                <h2 class="procedure-card__heading">Маски для обличчя</h2>
-                <img
-                  class="procedure-card__img"
-                  src="images/png/cosmetologist-applying-facial-mask.jpg"
-                  alt="Косметолог наносить маску на лице пацієнтки"
-                />
-              </article>
-            </li>
-            <li class="procedures-section__item swiper-slide">
-              <article class="procedure-card">
-                <h2 class="procedure-card__heading">Ін'єкції для обличчя</h2>
-                <img
-                  class="procedure-card__img"
-                  src="images/png/cosmetologist-injecting-cosmetic-solution.jpg"
-                  alt="Косметолог вводить косметологічний розчин"
-                />
-              </article>
-            </li>
-            <li class="procedures-section__item swiper-slide">
-              <article class="procedure-card">
-                <h2 class="procedure-card__heading">Очищення обличчя</h2>
-                <img
-                  class="procedure-card__img"
-                  src="images/png/cosmetologist-performing-ultrasound-peeling.jpg"
-                  alt="Косметолог проводить ультразвуковий пілінг"
-                />
-              </article>
-            </li>
-          </ul>
           <button
-            class="procedures-section__btn procedures-section__btn--next swiper-button-next"
-            type="button"
+            class="procedures-section__button procedures-section__button--prev swiper-button-prev"
           >
-            <svg
-              class="procedures-section__icon procedures-section__icon--next"
-            >
-              <use href="images/svg/icons.svg#arrow-icon"></use>
+            <svg class="procedures-section__icon">
+              <use href="/images/svg/icons.svg#arrow-icon"></use>
             </svg>
           </button>
           <div class="swiper-pagination"></div>
@@ -453,7 +447,7 @@
                 <input
                   class="input__control"
                   type="tel"
-                  id="tel"
+                  id="telephone"
                   placeholder="Ваш номер телефону"
                 />
               </div>
@@ -464,7 +458,7 @@
                 <input
                   class="input__control"
                   type="email"
-                  id="email"
+                  id="mail"
                   placeholder="Ваша електронна пошта"
                 />
               </div>
@@ -483,4 +477,6 @@
   </body>
   <script src="js/modal.js"></script>
   <script src="js/burger-menu.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+  <script src="js/swiper.js"></script>
 </html>

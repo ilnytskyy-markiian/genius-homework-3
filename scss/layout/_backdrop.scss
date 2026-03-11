@@ -10,11 +10,13 @@
   align-items: center;
   justify-content: center;
   background-color: rgba(var(--triplet-secondary-darkblue), 0.4);
-  transition: opacity 0.2s, visibility 0.2s;
-  padding: 20px;
+  transition:
+    opacity 0.2s,
+    visibility 0.2s;
+  padding: 0 20px;
   z-index: 2;
 
   @media screen and (max-width: v.$bp-mobile) {
-    padding: 0;
+    padding: 0 20px;
   }
 }

@@ -1,14 +1,10 @@
 @use "../utils/variables" as v;
 
-$hero-section-bg-size-desktop: 1152px;
-$hero-section-bg-size-mobile: 600px;
-$hero-section-mask-size-desktop: 1998px;
-$hero-section-mask-size-mobile: 870px;
-
 .hero-section {
   .section {
     position: relative;
-    background-image: linear-gradient(
+    background-image:
+      linear-gradient(
         90deg,
         rgba(255, 255, 255, 1) 0%,
         rgba(255, 255, 255, 0.8509) 26%,
@@ -17,11 +13,13 @@ $hero-section-mask-size-mobile: 870px;
       ),
       url("images/png/hero-background.png");
     // background-size: cover;
-    background-size: $hero-section-bg-size-desktop;
+    background-size: v.$hero-section-bg-size-desktop;
     background-repeat: no-repeat;
-    background-position: right, top right -24px;
+    background-position:
+      right,
+      top right -24px;
     mask-image: url("masks/hero-mask.svg");
-    mask-size: $hero-section-mask-size-desktop;
+    mask-size: v.$hero-section-mask-size-desktop;
     mask-repeat: no-repeat;
     mask-position: bottom 0 right calc(50% - 131px);
     max-width: 1440px;
@@ -29,7 +27,8 @@ $hero-section-mask-size-mobile: 870px;
     padding-top: 102px;
 
     @media screen and (max-width: v.$bp-mobile) {
-      background-image: linear-gradient(
+      background-image:
+        linear-gradient(
           45deg,
           rgba(255, 255, 255, 1) 0%,
           rgba(255, 255, 255, 0.78) 31%,
@@ -38,8 +37,8 @@ $hero-section-mask-size-mobile: 870px;
         ),
         url("images/png/hero-background.png");
       background-position: bottom;
-      background-size: $hero-section-bg-size-mobile;
-      mask-size: $hero-section-mask-size-mobile;
+      background-size: v.$hero-section-bg-size-mobile;
+      mask-size: v.$hero-section-mask-size-mobile;
       mask-position: bottom;
       padding: 0;
       padding-top: 71px;
